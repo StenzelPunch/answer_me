@@ -1,7 +1,7 @@
 .DS_Store
+docs
 node_modules
 private
-
 deploy.sh
 # local env files
 .env.local
