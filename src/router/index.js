@@ -15,7 +15,6 @@ import StatisticsView from "../views/StatisticsView";
 Vue.use(Router);
 
 const router = new Router({
-    mode: "history",
     routes: [
         {
             path: "/",

@@ -229,7 +229,7 @@ export default {
             this.db.doc(this.polls[i].id).delete();
         },
         pollLink(i) {
-            return `https://stenzelpunch.github.io/answer_me/poll/` + this.polls[i].id;
+            return `https://stenzelpunch.github.io/answer_me/#/poll/` + this.polls[i].id;
         },
         copy(i) {
             const link = document.getElementById("pollLink-" + i);

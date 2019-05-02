@@ -192,7 +192,7 @@ export default {
             return this.$store.getters.user;
         },
         pollLink() {
-            return `https://stenzelpunch.github.io/answer_me/poll/` + this.id;
+            return `https://stenzelpunch.github.io/answer_me/#/poll/` + this.id;
         }
     },
     methods: {
