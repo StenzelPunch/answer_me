@@ -311,9 +311,6 @@ p {
 .mypolls-body {
     margin: 20px 0;
 }
-.mypolls-header {
-    /* align-items: baseline; */
-}
 .dropdown .btn {
     margin-left: auto;
 }

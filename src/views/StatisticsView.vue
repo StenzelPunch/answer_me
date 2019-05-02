@@ -8,6 +8,9 @@
             Нет доступа
         </app-alert>
         <div v-else-if="status === 'Loaded'" class="questions">
+            <div class="statistic-header mr-auto align-baseline">
+                Ответов всего: <span class="text-primary">{{ data.answers.length }}</span>
+            </div>
             <div v-for="(question, index) in data.questions" :key="index" class="question">
                 <h4>
                     <span class="question-number">{{ index + 1 }}.</span> {{ question.title }}
@@ -69,6 +72,12 @@ export default {
 </script>
 
 <style scoped>
+.statistic-header {
+    margin: 10px 0;
+    padding: 10px;
+    border: #f8f9fa 2px solid;
+    border-radius: 6px;
+}
 .questions {
     padding: 5px;
 }
