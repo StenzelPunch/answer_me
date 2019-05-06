@@ -16,15 +16,14 @@
                     Сортировка
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a
+                    <p
                         v-for="(item, index) in sortBtns"
                         :key="index"
                         :class="`dropdown-item ${item.criterion === sortCriterion ? 'active' : ''}`"
                         @click="pollSort(item.criterion)"
-                        href="#"
                     >
                         {{ item.title }}
-                    </a>
+                    </p>
                 </div>
             </div>
         </div>

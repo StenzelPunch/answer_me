@@ -54,15 +54,9 @@ export default {
             try {
                 firebase
                     .auth()
-                    .createUserWithEmailAndPassword(
-                        payload.email,
-                        payload.password
-                    )
+                    .createUserWithEmailAndPassword(payload.email, payload.password)
                     .then(user => {
-                        const profile = createUserProfile(
-                            payload,
-                            user.user.uid
-                        );
+                        const profile = createUserProfile(payload, user.user.uid);
                         firebase
                             .firestore()
                             .collection("users")
@@ -105,6 +99,9 @@ export default {
     getters: {
         user(state) {
             return state.user;
+        },
+        profile(state) {
+            return state.profile;
         },
         loginError(state) {
             return state.loginError;
